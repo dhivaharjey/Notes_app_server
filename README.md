@@ -1,5 +1,5 @@
 # Notes App
-
+[](https://github.com/user-attachments/assets/c59da0de-d8db-4b6c-81ef-8f5c8277859a)
 - **Create and Manage Notes**: Users can create, edit, and delete personal notes.
 - **Rich Text Content**: Add detailed content to each note with formatting options.
 - **Tagging System**: Organize notes with custom tags for easy categorization.
