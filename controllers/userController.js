@@ -128,9 +128,15 @@ export const userLogout = async (req, res) => {
     }
     user.refreshToken = null;
     await user.save();
-    res
-      .clearCookie("accessToken")
-      .clearCookie("refreshToken")
+    const options = {
+      path: "/",
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+    };
+    return res
+      .clearCookie("accessToken", options)
+      .clearCookie("refreshToken", options)
       .json({ message: "Logged out" });
   } catch (error) {
     return res
